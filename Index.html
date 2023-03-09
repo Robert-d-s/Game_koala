@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="css/game_stylesheet.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <section id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+
+            <div id="game_sprites">
+                <div id="leaf_container">
+                    <div id="leaf_sprite"></div>
+                </div>
+                <div id="branch_container">
+                    <div id="branch_sprite"></div>
+                </div>
+                <div id="dirt_container">
+                    <div id="dirt_sprite"></div>
+                </div>
+                <div id="plate_container">
+                    <div id="plate_sprite"></div>
+                </div>
+                <div id="sandwich_container">
+                    <div id="sandwich_sprite"></div>
+                </div>
+            </div>
+
+            <div id="game_middleground">
+                <!-- <div id="character"></div> -->
+            </div>
+
+            <div id="game_foreground"></div>
+
+            <div id="game_ui">
+                <div id="score_board">Score: <br><span id="current_score">0</span></div>
+                <div id="time_board">Time: <span id="time_left"></span></div>
+                <div id="lives_sprite"></div>
+                <div id="timer_container">
+                    <div id="timer_sprite"></div>
+                </div>
+        </div>
+        <div id="title_screen" class="hidden">
+
+            <div id="title_instructions"></div>
+            <div id="title_playgame"></div>
+        </div>
+
+        <div id="instructions_screen" class="hidden">
+            <div id="instr_title"></div>
+            <div id="instr_playgame"></div>
+        </div>
+
+        <div id="win_screen" class="hidden">
+            <div id="homebtn"></div>
+            <div id="win_playgame"></div>
+        </div>
+
+        <div id="lose_screen" class="hidden">
+            <div id="homebtn1"></div>
+            <div id="lose_playgame"></div>
+        </div>
+
+        <div id="lose_screen2" class="hidden">
+            <div id="homebtn2"></div>
+            <div id="lose_playgame2"></div>
+        </div>
+
+        <audio id="gsound" src="audio/button_click.mp3"></audio>
+        <audio id="bsound" src="audio/button_click2.mp3"></audio>
+        <audio id="winsound" src="audio/win_grunts.mp3"></audio>
+        <audio id="lose1sound" src="audio/lose_screams.mp3"></audio>
+        <audio id="lose2sound" src="audio/lose_snoring.mp3"></audio>
+        <audio id="bgsound" src="audio/bgmusic.mp3"></audio>
+                
+    </section>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
